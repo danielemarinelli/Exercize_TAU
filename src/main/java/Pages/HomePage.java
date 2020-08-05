@@ -14,6 +14,8 @@ public class HomePage {
     private By listDropDown = By.xpath(".//select[@id='dropdown']");
     private By btnForgotPw = By.xpath(".//a[contains(text(),'got Pass')]");
     private By btnGeolocal = By.xpath(".//a[text()='Geolocation']");
+    private By btnDynamicLoad = By.xpath(".//a[contains(text(),'amic Loa')]");
+    private By btnDisapEle = By.xpath(".//a[contains(text(),'Disa')]");
 
     public HomePage(WebDriver driver){ this.driver=driver; }
 
@@ -43,4 +45,15 @@ public class HomePage {
         driver.findElement(btnGeolocal).click();
         return new geoLocalPage(driver);
     }
+
+    public DynLoadPage dynamicLoadFunction(){
+        driver.findElement(btnDynamicLoad).click();
+        return new DynLoadPage(driver);
+    }
+
+    public DisappearingElementsPage clickBtnDisapEle(){
+        driver.findElement(btnDisapEle).click();
+        return new DisappearingElementsPage(driver);
+    }
+
 }

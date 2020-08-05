@@ -18,6 +18,7 @@ public class geoLocalPage {
 
     public String geoLocationInfo(){
         driver.findElement(btnWhere).click();
+
         //System.out.println("This is your location in the Earth: "+
           //      driver.findElement(latitude).getText()+","+
             //    driver.findElement(longitude).getText());

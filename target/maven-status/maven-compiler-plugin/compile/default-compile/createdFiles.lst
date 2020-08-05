@@ -1,0 +1,11 @@
+Pages\dropDownPage.class
+Pages\geoLocalPage.class
+Pages\DynLoadPage.class
+Pages\forgotPasswordPage.class
+Pages\DynamicLoadExample1Page.class
+Pages\SecureAreaPage.class
+Pages\emailSentPage.class
+Pages\contextPage.class
+Pages\DisappearingElementsPage.class
+Pages\LoginPage.class
+Pages\HomePage.class
